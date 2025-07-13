@@ -1,7 +1,8 @@
 version: '3.8'
 services:
   hyperswitch:
-    image: coolify/hyperswitch:latest
+    context: .
+    dockerfile: Dockerfile
     container_name: hyperswitch_app
     restart: unless-stopped
     ports:
